@@ -1,7 +1,4 @@
 docker compose up --build -d
-echo 'Fisrst'
-docker compose exec -d php-cli bash
+echo 'First'
+docker compose exec -d php-cli bash -c "chmod 777 -R /var/www && composer create-project laravel/laravel name_project"
 echo 'Second'
-chmod 777 -R /var/www
-echo 'Third'
-composer create-project laravel/laravel name_project
