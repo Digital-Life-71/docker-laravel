@@ -7,4 +7,4 @@ echo 'Three'
 mv name_project/* ./
 mv name_project/.* ./
 rm -rf name_project/
-curl -sS http://localhost:8080 | xargs xdg-open
+gnome-open http://localhost:8080
