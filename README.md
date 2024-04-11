@@ -1,14 +1,14 @@
 # docker-laravel
 
-Создаем контейнеры
+Создаем Docker-контейнеры:
 ```
 docker compose up --build -d
 ```
-После установки контейнеров, переходим в контейнер php-cli 
+После установки контейнеров, переходим в контейнер php-cli: 
 ```
 docker compose exec php-cli bash
 ```
-Внутри контейнера устанвливаем Laravel 
+Внутри контейнера устанвливаем Laravel:
 ```
 composer create-project laravel/laravel <имя_проекта>
 ```
