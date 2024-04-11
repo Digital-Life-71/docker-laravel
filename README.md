@@ -10,11 +10,11 @@ docker compose exec php-cli bash
 ```
 Внутри контейнера устанвливаем Laravel:
 ```
-composer create-project laravel/laravel <имя_проекта>
+composer create-project laravel/laravel name_project
 ```
 При возникновении ошибок, связанных с правами запускаем команду из этого контейнера: 
 ```
-sudo chmod 777 -R /var/www
+chmod 777 -R /var/www
 ```
 После успешной установки Laravel переносим все файлы и папки из директории <имя_проекта> в корневую директорию.
 Во избежание проблем с правами прописываем команду для папки проекта: 
